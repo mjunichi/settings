@@ -1,0 +1,10 @@
+framework module LoginServiceKit {
+  umbrella header "LoginServiceKit.h"
+
+  export *
+  module * { export * }
+}
+
+module LoginServiceKit.Swift {
+    header "LoginServiceKit-Swift.h"
+}
