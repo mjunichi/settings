@@ -1,0 +1,15 @@
+duti -s com.github.atom .txt all
+duti -s com.github.atom .csv all
+duti -s com.github.atom .tsv all
+duti -s com.github.atom .xml all
+duti -s com.github.atom .js all
+duti -s com.github.atom .css all
+duti -s com.github.atom .sh all
+duti -s com.github.atom .pl all
+duti -s com.github.atom .php all
+duti -s com.github.atom .go all
+duti -s com.github.atom .json all
+duti -s com.github.atom .sql all
+duti -s com.github.atom .swift all
+duti -s com.github.atom .java all
+duti -s com.github.atom .md all
