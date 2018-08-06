@@ -1,216 +1,205 @@
 {
-  "BTTPresetName" : "Default",
-  "BTTPresetUUID" : "1E21E6AD-6A28-462A-BB7E-F89D9E7446AB",
-  "BTTPresetContent" : [
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppSpecificSettings" : {
+	"BTTPresetName": "Default",
+	"BTTPresetUUID": "1E21E6AD-6A28-462A-BB7E-F89D9E7446AB",
+	"BTTPresetContent": [{
+			"BTTAppBundleIdentifier": "com.apple.finder",
+			"BTTAppName": "Finder",
+			"BTTAppSpecificSettings": {
 
-      },
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 101,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTShortcutToSend" : "55,30",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 1
-        },
-        {
-          "BTTTriggerType" : 100,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTShortcutToSend" : "55,33",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.mail",
-      "BTTAppName" : "Mail",
-      "BTTAppSpecificSettings" : {
+			},
+			"BTTTriggers": [{
+					"BTTTriggerType": 101,
+					"BTTTriggerTypeDescription": "3 Finger Swipe Right",
+					"BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
+					"BTTShortcutToSend": "55,30",
+					"BTTEnabled": 1,
+					"BTTOrder": 1
+				},
+				{
+					"BTTTriggerType": 100,
+					"BTTTriggerTypeDescription": "3 Finger Swipe Left",
+					"BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
+					"BTTShortcutToSend": "55,33",
+					"BTTEnabled": 1,
+					"BTTOrder": 0
+				}
+			]
+		},
+		{
+			"BTTAppBundleIdentifier": "com.apple.mail",
+			"BTTAppName": "Mail",
+			"BTTAppSpecificSettings": {
 
-      },
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTShortcutToSend" : "55,13",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 53,
-          "BTTShortcutModifierKeys" : 0,
-          "BTTOrder" : 0
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.iCal",
-      "BTTAppName" : "Calendar",
-      "BTTAppSpecificSettings" : {
+			},
+			"BTTTriggers": [{
+				"BTTTriggerType": -1,
+				"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+				"BTTShortcutToSend": "55,13",
+				"BTTEnabled": 1,
+				"BTTShortcutKeyCode": 53,
+				"BTTShortcutModifierKeys": 0,
+				"BTTOrder": 0
+			}]
+		},
+		{
+			"BTTAppBundleIdentifier": "com.apple.iCal",
+			"BTTAppName": "Calendar",
+			"BTTAppSpecificSettings": {
 
-      },
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTShortcutToSend" : "55,13",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 53,
-          "BTTShortcutModifierKeys" : 0,
-          "BTTOrder" : 0
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.microsoft.Outlook",
-      "BTTAppName" : "Microsoft Outlook",
-      "BTTAppSpecificSettings" : {
+			},
+			"BTTTriggers": [{
+				"BTTTriggerType": -1,
+				"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+				"BTTShortcutToSend": "55,13",
+				"BTTEnabled": 1,
+				"BTTShortcutKeyCode": 53,
+				"BTTShortcutModifierKeys": 0,
+				"BTTOrder": 0
+			}]
+		},
+		{
+			"BTTAppBundleIdentifier": "com.microsoft.Outlook",
+			"BTTAppName": "Microsoft Outlook",
+			"BTTAppSpecificSettings": {
 
-      },
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTShortcutToSend" : "55,13",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 53,
-          "BTTShortcutModifierKeys" : 0,
-          "BTTOrder" : 38,
-          "BTTKeySequence" : {
+			},
+			"BTTTriggers": [{
+				"BTTTriggerType": -1,
+				"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+				"BTTShortcutToSend": "55,13",
+				"BTTEnabled": 1,
+				"BTTShortcutKeyCode": 53,
+				"BTTShortcutModifierKeys": 0,
+				"BTTOrder": 38,
+				"BTTKeySequence": {
 
-          }
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.google.Chrome",
-      "BTTAppName" : "Google Chrome",
-      "BTTAppSpecificSettings" : {
+				}
+			}]
+		},
+		{
+			"BTTAppBundleIdentifier": "com.google.Chrome",
+			"BTTAppName": "Google Chrome",
+			"BTTAppSpecificSettings": {
 
-      },
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 104,
-          "BTTTriggerTypeDescription" : "3 Finger Tap",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 1,
-          "BTTPredefinedActionName" : "Middle Click",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "BT.G",
-      "BTTAppName" : "Global",
-      "BTTAppSpecificSettings" : {
+			},
+			"BTTTriggers": [{
+				"BTTTriggerType": 104,
+				"BTTTriggerTypeDescription": "3 Finger Tap",
+				"BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
+				"BTTPredefinedActionType": 1,
+				"BTTPredefinedActionName": "Middle Click",
+				"BTTEnabled": 1,
+				"BTTOrder": 0
+			}]
+		},
+		{
+			"BTTAppBundleIdentifier": "BT.G",
+			"BTTAppName": "Global",
+			"BTTAppSpecificSettings": {
 
-      },
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 102,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Up",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTShortcutToSend" : "55,17",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 1
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 19,
-          "BTTPredefinedActionName" : "Maximize Window Left",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 123,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 2
-        },
-        {
-          "BTTTriggerType" : 132,
-          "BTTTriggerTypeDescription" : "TipTap Left (2 Fingers Fix)",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTShortcutToSend" : "58,55,123",
-          "BTTEnabled" : 1,
-          "BTTRequiredModifierKeys" : 131072,
-          "BTTOrder" : 2
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 21,
-          "BTTPredefinedActionName" : "Maximize Window",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 126,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 0
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 10,
-          "BTTPredefinedActionName" : "Open Finder",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 14,
-          "BTTShortcutModifierKeys" : 1048576,
-          "BTTOrder" : 4
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 47,
-          "BTTPredefinedActionName" : "Move Window to Next Monitor",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 126,
-          "BTTShortcutModifierKeys" : 655360,
-          "BTTOrder" : 5
-        },
-        {
-          "BTTTriggerType" : 103,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Down",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTShortcutToSend" : "55,13",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 20,
-          "BTTPredefinedActionName" : "Maximize Window Right",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 124,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 3
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/%E2%8C%98%E8%8B%B1%E3%81%8B%E3%81%AA.app",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 50,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 6
-        },
-        {
-          "BTTTriggerType" : 133,
-          "BTTTriggerTypeDescription" : "TipTap Right (2 Fingers Fix)",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTShortcutToSend" : "58,55,124",
-          "BTTEnabled" : 1,
-          "BTTRequiredModifierKeys" : 131072,
-          "BTTOrder" : 3
-        },
-        {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 84,
-          "BTTPredefinedActionName" : "Restore Old Window Size",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 125,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 1
-        }
-      ]
-    }
-  ],
-  "BTTPresetSnapAreas" : [
+			},
+			"BTTTriggers": [{
+					"BTTTriggerType": 102,
+					"BTTTriggerTypeDescription": "3 Finger Swipe Up",
+					"BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
+					"BTTShortcutToSend": "55,17",
+					"BTTEnabled": 1,
+					"BTTOrder": 1
+				},
+				{
+					"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+					"BTTPredefinedActionType": 19,
+					"BTTPredefinedActionName": "Maximize Window Left",
+					"BTTEnabled": 1,
+					"BTTShortcutKeyCode": 123,
+					"BTTShortcutModifierKeys": 524288,
+					"BTTOrder": 2
+				},
+				{
+					"BTTTriggerType": 132,
+					"BTTTriggerTypeDescription": "TipTap Left (2 Fingers Fix)",
+					"BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
+					"BTTShortcutToSend": "58,55,123",
+					"BTTEnabled": 1,
+					"BTTRequiredModifierKeys": 131072,
+					"BTTOrder": 2
+				},
+				{
+					"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+					"BTTPredefinedActionType": 21,
+					"BTTPredefinedActionName": "Maximize Window",
+					"BTTEnabled": 1,
+					"BTTShortcutKeyCode": 126,
+					"BTTShortcutModifierKeys": 524288,
+					"BTTOrder": 0
+				},
+				{
+					"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+					"BTTPredefinedActionType": 10,
+					"BTTPredefinedActionName": "Open Finder",
+					"BTTEnabled": 1,
+					"BTTShortcutKeyCode": 14,
+					"BTTShortcutModifierKeys": 1048576,
+					"BTTOrder": 4
+				},
+				{
+					"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+					"BTTPredefinedActionType": 47,
+					"BTTPredefinedActionName": "Move Window to Next Monitor",
+					"BTTEnabled": 1,
+					"BTTShortcutKeyCode": 126,
+					"BTTShortcutModifierKeys": 655360,
+					"BTTOrder": 5
+				},
+				{
+					"BTTTriggerType": 103,
+					"BTTTriggerTypeDescription": "3 Finger Swipe Down",
+					"BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
+					"BTTShortcutToSend": "55,13",
+					"BTTEnabled": 1,
+					"BTTOrder": 0
+				},
+				{
+					"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+					"BTTPredefinedActionType": 20,
+					"BTTPredefinedActionName": "Maximize Window Right",
+					"BTTEnabled": 1,
+					"BTTShortcutKeyCode": 124,
+					"BTTShortcutModifierKeys": 524288,
+					"BTTOrder": 3
+				},
+				{
+					"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+					"BTTPredefinedActionType": 49,
+					"BTTPredefinedActionName": "Open Application \/ File \/ Apple Script …",
+					"BTTLaunchPath": "file:\/\/\/Applications\/%E2%8C%98%E8%8B%B1%E3%81%8B%E3%81%AA.app",
+					"BTTEnabled": 1,
+					"BTTShortcutKeyCode": 50,
+					"BTTShortcutModifierKeys": 524288,
+					"BTTOrder": 6
+				},
+				{
+					"BTTTriggerType": 133,
+					"BTTTriggerTypeDescription": "TipTap Right (2 Fingers Fix)",
+					"BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
+					"BTTShortcutToSend": "58,55,124",
+					"BTTEnabled": 1,
+					"BTTRequiredModifierKeys": 131072,
+					"BTTOrder": 3
+				},
+				{
+					"BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+					"BTTPredefinedActionType": 84,
+					"BTTPredefinedActionName": "Restore Old Window Size",
+					"BTTEnabled": 1,
+					"BTTShortcutKeyCode": 125,
+					"BTTShortcutModifierKeys": 524288,
+					"BTTOrder": 1
+				}
+			]
+		}
+	],
+	"BTTPresetSnapAreas": [
 
-  ]
+	]
 }
