@@ -1,6 +1,14 @@
 ## pathを設定
 path=(~/bin(N-/) /usr/local/bin(N-/) ${path})
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+export GITHUB_ACCESS_TOKEN=a8d521ea78b1128edf1f72fc9ea72d9cf1f088b5
+
+eval "$(pyenv init -)"
+eval "$(rbenv init -)"
+
 ###############
 # zsh Setting
 ###############
@@ -108,3 +116,27 @@ alias ls='ls -FG'
 alias ll='ls -l'
 alias grep='grep --color'
 alias diff='colordiff -u'
+
+# zsh-bd
+. $HOME/.zsh/plugins/bd/bd.zsh
+
+
+function peco-z-search
+{
+  which peco z > /dev/null
+  if [ $? -ne 0 ]; then
+    echo "Please install peco and z"
+    return 1
+  fi
+  local res=$(z | sort -rn | cut -c 12- | peco)
+  if [ -n "$res" ]; then
+    BUFFER+="cd $res"
+    zle accept-line
+  else
+    return 1
+  fi
+}
+zle -N peco-z-search
+bindkey '^f' peco-z-search
+
+source ~/.zsh.d/z.sh
