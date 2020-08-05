@@ -1,6 +1,8 @@
 ## pathを設定
 path=(~/bin(N-/) /usr/local/bin(N-/) ${path})
 
+
+
 ###############
 # zsh Setting
 ###############
@@ -108,3 +110,5 @@ alias ls='ls -FG'
 alias ll='ls -l'
 alias grep='grep --color'
 alias diff='colordiff -u'
+alias ql='qlmanage -p "$@" >& /dev/null'
+
