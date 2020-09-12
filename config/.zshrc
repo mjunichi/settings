@@ -1,13 +1,23 @@
 ## pathを設定
 path=(~/bin(N-/) /usr/local/bin(N-/) ${path})
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.pyenv/shims:$PATH"
 
-export GITHUB_ACCESS_TOKEN=a8d521ea78b1128edf1f72fc9ea72d9cf1f088b5
+# eval "$(starship init zsh)"
 
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
+function google() {
+	local str opt
+	if [ $# != 0 ]; then
+		for i in $*; do
+			str="$str+$i"
+		done
+		str=`echo $str | sed 's/^\+//'`
+		opt='search?num=50&hl=ja&lr=lang_ja'
+		opt="${opt}&q=${str}"
+	fi
+	w3m http://www.google.co.jp/$opt
+}
+
 
 ###############
 # zsh Setting
@@ -69,43 +79,52 @@ bindkey "^[[Z" reverse-menu-complete
 
 # vcs_info
 autoload -Uz vcs_info
-## branchの表示
-zstyle ':vcs_info:*' formats '(%b)'
-precmd() { vcs_info }
 
-# color
-## プロンプトの色の設定
-autoload -U colors; colors
-PROMPT='
-%{${fg[green]}%}%n@%m%{${reset_color}%}: %{${fg[yellow]}%}%~%{${reset_color}%} %{${fg[red]}%}${vcs_info_msg_0_}%{${reset_color}%}
-$ '
-## 補完候補の色づけ
-export LSCOLORS=gxfxcxdxbxegedabagacag
-export LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;46'
-export ZLS_COLORS=$LS_COLORS
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-## 補完候補のハイライト
-zstyle ':completion:*:default' menu select=2
+# ここはプロンプトの設定なので今回の設定とは関係ありません
+if [ $UID -eq 0 ];then
+# ルートユーザーの場合
+PROMPT="%F{red}%n:%f%F{green}%d%f [%m] %%
+"
+else
+# ルートユーザー以外の場合
+PROMPT="%F{cyan}%n:%f%F{green}%d%f [%m] %%
+"
+fi
 
 # zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
-zplug "zsh-users/zsh-completions"
-fpath=(/usr/local/opt/zplug/repos/zsh-users/zsh-completions $fpath)
-zplug "plugins/git", from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+source ~/.zplug/init.zsh
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+# 非同期処理できるようになる
+zplug "mafredri/zsh-async"
+# テーマ(ここは好みで。調べた感じpureが人気)
+zplug "sindresorhus/pure"
+# 構文のハイライト(https://github.com/zsh-users/zsh-syntax-highlighting)
+zplug "zsh-users/zsh-syntax-highlighting"
+# コマンド入力途中で上下キー押したときの過去履歴がいい感じに出るようになる
 zplug "zsh-users/zsh-history-substring-search"
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-## 未インストール項目をインストールする
+# 過去に入力したコマンドの履歴が灰色のサジェストで出る
+zplug "zsh-users/zsh-autosuggestions"
+# 補完強化
+zplug "zsh-users/zsh-completions"
+# 256色表示にする
+zplug "chrissicool/zsh-256color"
+# コマンドライン上の文字リテラルの絵文字を emoji 化する
+zplug "mrowa44/emojify", as:command
+
+zplug "b4b4r07/enhancd", use:"init.sh"
+
+# Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
   printf "Install? [y/N]: "
   if read -q; then
-       echo; zplug install
+    echo; zplug install
   fi
 fi
-## コマンドをリンクして、PATH に追加し、プラグインは読み込む
-zplug load --verbose
+zplug load
+
+
+# プロンプトが表示されるたびにプロンプト文字列を評価、置換する
+setopt prompt_subst
 
 # global alias
 alias -g L='| less'
@@ -114,29 +133,7 @@ alias -g G='| grep'
 # alias
 alias ls='ls -FG'
 alias ll='ls -l'
+alias la='ls -al'
 alias grep='grep --color'
 alias diff='colordiff -u'
-
-# zsh-bd
-. $HOME/.zsh/plugins/bd/bd.zsh
-
-
-function peco-z-search
-{
-  which peco z > /dev/null
-  if [ $? -ne 0 ]; then
-    echo "Please install peco and z"
-    return 1
-  fi
-  local res=$(z | sort -rn | cut -c 12- | peco)
-  if [ -n "$res" ]; then
-    BUFFER+="cd $res"
-    zle accept-line
-  else
-    return 1
-  fi
-}
-zle -N peco-z-search
-bindkey '^f' peco-z-search
-
-source ~/.zsh.d/z.sh
+alias ql='qlmanage -p "$@" >& /dev/null'
