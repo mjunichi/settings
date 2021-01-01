@@ -115,6 +115,10 @@ zplug "chrissicool/zsh-256color"
 zplug "mrowa44/emojify", as:command
 
 zplug "b4b4r07/enhancd", use:"init.sh"
+zplug "junegunn/fzf-bin", \
+    as:command, \
+    from:gh-r, \
+    rename-to:fzf
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
