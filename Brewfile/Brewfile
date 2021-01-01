@@ -51,6 +51,7 @@ brew libogg
 brew libpng
 brew libsamplerate
 brew libsndfile
+brew libsodium
 brew libsoxr
 brew libtasn1
 brew libtiff
@@ -81,8 +82,6 @@ brew pcre2
 brew pixman
 brew pkg-config
 brew pyenv
-brew python@3.8
-brew python@3.9
 brew rav1e
 brew rbenv
 brew readline
@@ -114,6 +113,7 @@ brew x265
 brew xvid
 brew xz
 brew youtube-dl
+brew zeromq
 brew zimg
 brew zsh
 brew zsh-completions
@@ -141,7 +141,6 @@ cask karabiner-elements
 cask keepingyouawake
 cask keyboardcleantool
 cask provisionql
-cask qlcolorcode
 cask qlimagesize
 cask qlmarkdown
 cask qlprettypatch
@@ -170,20 +169,21 @@ cask p4merge
 
 # App Store applications
 appstore 1180531112 DeskApp for YouTube (1.3)
-appstore 682658836 GarageBand (10.3.4)
+appstore 682658836 GarageBand (10.4.2)
 appstore 668208984 GIPHY CAPTURE (4.1)
-appstore 408981434 iMovie (10.1.14)
-appstore 409183694 Keynote (10.0)
+appstore 408981434 iMovie (10.2.1)
+appstore 409183694 Keynote (10.3.8)
 appstore 715768417 Microsoft Remote Desktop (8.0.30030)
-appstore 1335612105 MKPlayer (1.4.1)
+appstore 1335612105 MKPlayer (1.4.2)
 appstore 1218784832 NamingTranslator (1.0.1)
-appstore 409203825 Numbers (10.0)
-appstore 409201541 Pages (10.0)
+appstore 409203825 Numbers (10.3.5)
+appstore 409201541 Pages (10.3.5)
 appstore 1288063933 PasteTheType (1.1)
 appstore 1007457278 Realm Browser (3.0.1)
+appstore 1449412482 Reeder (4.2.8)
 appstore 1477385213 Save to Pocket (1.1)
 appstore 1114363220 TermHere (1.1)
-appstore 425424353 The Unarchiver (4.2.1)
-appstore 1480933944 Vimari (2.0.3)
+appstore 425424353 The Unarchiver (4.2.4)
+appstore 1480933944 Vimari (2.1.0)
 appstore 1472432422 Wayback Machine (1.4)
-appstore 497799835 Xcode (11.4.1)
+appstore 497799835 Xcode (12.2)
