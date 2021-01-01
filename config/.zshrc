@@ -18,6 +18,9 @@ function google() {
 	w3m http://www.google.co.jp/$opt
 }
 
+function imginfo() {
+    imgcat $1 && sips --getProperty pixelHeight --getProperty pixelWidth $1;
+}
 
 ###############
 # zsh Setting
