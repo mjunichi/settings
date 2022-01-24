@@ -900,6 +900,25 @@
                         ]
                     },
                     {
+                        "description": "Change Backslash to Alt+Backslash",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "backslash"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "backslash",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Command+E Opens Finder",
                         "manipulators": [
                             {
