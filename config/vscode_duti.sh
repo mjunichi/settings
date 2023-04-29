@@ -1,0 +1,15 @@
+duti -s com.microsoft.VSCode .txt all
+duti -s com.microsoft.VSCode .csv all
+duti -s com.microsoft.VSCode .tsv all
+duti -s com.microsoft.VSCode .xml all
+duti -s com.microsoft.VSCode .js all
+duti -s com.microsoft.VSCode .css all
+duti -s com.microsoft.VSCode .sh all
+duti -s com.microsoft.VSCode .pl all
+duti -s com.microsoft.VSCode .php all
+duti -s com.microsoft.VSCode .go all
+duti -s com.microsoft.VSCode .json all
+duti -s com.microsoft.VSCode .sql all
+duti -s com.microsoft.VSCode .swift all
+duti -s com.microsoft.VSCode .java all
+duti -s com.microsoft.VSCode .md all

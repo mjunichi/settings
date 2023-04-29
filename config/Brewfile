@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "homebrew/services"
 tap "jhawthorn/fzy"
 brew "carthage"
 brew "duti"
@@ -9,26 +10,36 @@ brew "fzy"
 brew "git"
 brew "jq"
 brew "mas"
+brew "mint"
 brew "rbenv"
 brew "rename"
+brew "speedtest-cli"
 brew "swiftformat"
 brew "tig"
 cask "alfred"
 cask "appcleaner"
-cask "atom"
 cask "bettertouchtool"
 cask "clipy", args: { appdir: "/Applications" }
 cask "google-chrome"
+cask "google-drive"
 cask "google-japanese-ime"
+cask "hyperswitch"
 cask "iina", args: { appdir: "/Applications" }
 cask "iterm2"
 cask "karabiner-elements"
 cask "keepingyouawake", args: { appdir: "/Applications" }
 cask "keyboardcleantool", args: { appdir: "/Applications" }
+cask "mongodb-realm-studio"
 cask "p4v", args: { appdir: "/Applications" }
 cask "slack", args: { appdir: "/Applications" }
 cask "sourcetree"
+cask "swiftformat-for-xcode"
+cask "visual-studio-code"
+cask "whalebird"
+cask "xcodes"
 mas "BetterSnapTool", id: 417375580
 mas "Realm Browser", id: 1007457278
 mas "TermHere", id: 1114363220
 mas "The Unarchiver", id: 425424353
+mas "Vimari", id: 1480933944
+mas "Vinegar", id: 1591303229
